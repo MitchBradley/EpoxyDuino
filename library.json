@@ -17,9 +17,18 @@
     },
     "license": "MIT",
     "platforms": [
-        "native"
+        "native",
+        "windows_x86"
     ],
     "build": {
-        "includeDir": "cores/epoxy"
+        "includeDir": "cores/epoxy",
+        "flags": [
+            "-Ilibraries/EpoxyFS/src",
+            "-Ilibraries/EpoxyEepromAvr/src",
+            "-Ilibraries/EpoxyEepromEsp/src",
+            "-Ilibraries/EpoxyMockDigitalWrite",
+            "-Ilibraries/EpoxyMockFastLED",
+            "-Ilibraries/EpoxyMockTimeOne"
+        ]
     }
 }
