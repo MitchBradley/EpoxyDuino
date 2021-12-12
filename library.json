@@ -20,6 +20,14 @@
         "native"
     ],
     "build": {
-        "includeDir": "cores/epoxy"
+        "includeDir": "cores/epoxy",
+        "flags": [
+            "-Ilibraries/EpoxyFS/src",
+            "-Ilibraries/EpoxyEepromAvr/src",
+            "-Ilibraries/EpoxyEepromEsp/src",
+            "-Ilibraries/EpoxyMockDigitalWrite",
+            "-Ilibraries/EpoxyMockFastLED",
+            "-Ilibraries/EpoxyMockTimeOne"
+        ]
     }
 }
